@@ -1,0 +1,240 @@
+:root {
+  --foreground-color: black;
+  --background-color: white;
+  --accent: #10fff3;
+  --accent-dark: #00b7ff;
+  --accent-secondary: #6203fa;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 2em;
+}
+
+.ss-i {
+  margin-right: 0.5rem;
+}
+
+/* 
+=============================
+ Main section 
+=============================
+*/
+
+
+.square-box {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding-top: calc(100% - 10em);
+  position: relative;
+}
+
+.ss-mainbox {
+  top: calc(50vh - 18em);
+  position: relative;
+  border: 1rem solid var(--foreground-color);
+  min-width: 200px;
+  max-width: 350px;
+  animation: fadeIn ease 0.5s;
+}
+
+.ss-highlight {
+  font-size: larger;
+  color: var(--foreground-color);
+  font-size: 5em;
+  font-weight: 700;
+  line-height: 0.9em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ss-animate-text-highlight-1 {
+  width: 0%;
+  height: 1em;
+  background: var(--accent);
+  position: absolute;
+  animation: animationHighlight 1s cubic-bezier(.74, .06, .4, .92) forwards;
+  display: flex;
+}
+
+
+.ss-animate-text-highlight-2 {
+  width: 0%;
+  height: 1em;
+  bottom: 1em;
+  background: var(--accent-secondary);
+  position: absolute;
+  animation: animationHighlight 1.5s cubic-bezier(.74, .06, .4, .92) forwards;
+  display: flex;
+}
+
+/* 
+=============================
+ Projects section 
+=============================
+*/
+
+.ss-card {
+  border-radius: 1em;
+}
+
+
+.ss-project-column {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ss-card-image {
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* 
+=============================
+ About section 
+=============================
+*/
+
+.ss-aboutbox {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+.ss-about-hey {
+  font-size: 3em;
+}
+
+.ss-about-h1 {
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.ss-about-content {
+  font-size: 2em;
+}
+
+.ss-name {
+  background: linear-gradient(270deg, var(--accent-secondary), var(--accent-dark));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.ss-fun-link {
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+  background:
+    linear-gradient(to bottom, var(--accent) 0%, var(--accent) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    background-blend-mode: soft-light;
+  color: var(--foreground-color);
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+.ss-fun-link:hover {
+  background-size: 4px 50px;
+}
+
+@media (max-width: 400px) {
+  
+  .ss-highlight {
+    font-size: 3em;
+  }
+  .square-box {
+    padding-top: calc(100% - 6em);
+  }
+
+  .ss-card-footer-text {
+    display: none;
+  }
+
+  .ss-about-content {
+    font-size: 1em;
+  }
+
+  .ss-about-hey {
+    font-size: 1em;
+  }
+  
+  .ss-about-h1 {
+    font-size: 2em;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .ss-md-center {
+    text-align: center;
+  }
+
+}
+
+
+
+@keyframes animationHighlight {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* Contacts */
+.ss-contacts {
+  display: inline-block;
+  min-width: 2.5em;
+  text-align: center;
+  background-color: var(--accent-secondary);
+  border-radius: 1em;
+  padding: 0.5em;
+  margin-right: 0.1em;
+  color: var(--foreground-color) !important;
+  transition: background-color 0.2s;
+}
+
+.ss-contacts:hover {
+  background-color: var(--accent-dark);
+}
