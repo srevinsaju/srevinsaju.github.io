@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="#main">
           <img src="/img/ss-logo-small.png" height="28" alt="Srevin Saju Logo Navbars">
@@ -48,13 +48,10 @@
             </a>
     
             <div class="navbar-dropdown">
-              <a class="navbar-item">
+              <a class="navbar-item" href="#about">
                 About
               </a>
-              <a class="navbar-item">
-                Jobs
-              </a>
-              <a class="navbar-item">
+              <a class="navbar-item" href="#contact">
                 Contact
               </a>
               <hr class="navbar-divider">
@@ -68,24 +65,19 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="field" style="margin: 0.5em;">
-              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded" checked="checked">
+              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
               <label for="themeSwitch">
-                <i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>
+                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
               </label>
             </div>
-            <div class="buttons">
-              
-              <a class="button is-light">
-                Log in
-              </a>
-            </div>
+
           </div>
         </div>
       </div>
     </nav>
 
     <!-- HOME SECTION -->
-    <section id="main" class="section" style="height: calc(100vh - 3.5em)">
+    <section id="main" class="section" style="height: 100vh">
       <div class="container ss-mainbox">
         <div class="square-box">
           <div class="ss-padding">
@@ -97,21 +89,22 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="section" style="height: calc(100vh - 3.5em)">
+    <section id="about" class="section" style="height: 100vh">
       <div class="container ss-aboutbox">
         <h1 class="ss-about-hey">Hey 👋</h1>
         <h2 class="ss-about-h1">I'm <a class="ss-name" style="overflow-wrap: normal;">Srevin Saju</a></h2>
         <p class="ss-about-content">
-          I am an <a class="ss-fun-link" href="https://github.com/srevinsaju">Open Source Developer</a>,
+          I am an <a class="ss-fun-link" href="https://github.com/srevinsaju" target="_blank">Open Source Developer</a>,
           Graphic Designer and Web developer, working on 
           <a class="ss-fun-link" href="#projects">interesting software</a> to learn something new everyday!
+          I try to make s
        </p>
        <div class="container" style="margin-top: 0.5em;">
          <!-- Contact icons -->
-         <a class="ss-contacts" href="#"><i class="fab fa-linkedin-in"></i><span class="sr-only">Linkedin</span></a>
-         <a class="ss-contacts" href="#"><i class="fa fa-github"></i><span class="sr-only">GitHub</span></a>
-         <a class="ss-contacts" href="#"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a>
-         <a class="ss-contacts" href="#"><i class="fa fa-gitlab"></i><span class="sr-only">GitLab</span></a>
+         <a class="ss-contacts" href="#" target="_blank"><i class="fab fa-linkedin-in"></i><span class="sr-only">Linkedin</span></a>
+         <a class="ss-contacts" href="#" target="_blank"><i class="fa fa-github"></i><span class="sr-only">GitHub</span></a>
+         <a class="ss-contacts" href="#" target="_blank"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a>
+         <a class="ss-contacts" href="#" target="_blank"><i class="fa fa-gitlab"></i><span class="sr-only">GitLab</span></a>
        </div>
 
       </div>
@@ -156,14 +149,14 @@
               </div>
 
 
-              <footer class="card-footer">
-                <a href="https://github.com/srevinsaju/guiscrcpy" class="card-footer-item">
+              <footer class="card-footer ss-card-footer">
+                <a href="https://github.com/srevinsaju/guiscrcpy" class="card-footer-item" target="_blank">
                   <i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">GitHub</span>
                 </a>
-                <a href="#" class="card-footer-item">
+                <a href="https://guiscrcpy.github.io" class="card-footer-item" target="_blank">
                   <i class="fa fa-wifi ss-i"></i><span class="ss-card-footer-text">Website</span>
                 </a>
-                <a href="https://en.wikipedia.org/wiki/Scrcpy#Graphical_User_Interface" class="card-footer-item">
+                <a href="https://en.wikipedia.org/wiki/Scrcpy#Graphical_User_Interface" class="card-footer-item" target="_blank">
                   <i class="fa fa-wikipedia-w ss-i"></i><span class="ss-card-footer-text">Wiki</span>
                 </a>
               </footer>
@@ -201,7 +194,7 @@
                 </div>
               </div>
 
-              <footer class="card-footer">
+              <footer class="card-footer ss-card-footer">
                 <a href="https://github.com/srevinsaju/guiscrcpy" class="card-footer-item">
                   <i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">GitHub</span>
                 </a>
@@ -242,19 +235,149 @@
                   <br>
                   <a href="#">#python</a> <a href="#">#appstore</a>
                   <br>
-                  <time datetime="2016-1-1">06 Jue 2020</time>
+                  <time datetime="2020-06-06">06 June 2020</time>
                 </div>
               </div>
 
-              <footer class="card-footer">
-                <a href="https://github.com/sugarlabs-appstore/aslo-v4" class="card-footer-item">
+              <footer class="card-footer ss-card-footer">
+                <a href="https://github.com/sugarlabs-appstore/aslo-v4" class="card-footer-item" target="_blank">
                   <i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">GitHub</span>
                 </a>
-                <a href="https://sugarstore.netlify.app" class="card-footer-item">
+                <a href="https://sugarstore.netlify.app" class="card-footer-item" target="_blank">
                   <i class="fa fa-wifi ss-i"></i><span class="ss-card-footer-text">Website</span>
                 </a>
-                <a href="https://sugarstore.netlify.app" class="card-footer-item">
-                  <i class="fa fa-wifi ss-i"></i><span class="ss-card-footer-text">Try</span>
+                <a href="https://github.com/srevinsaju/sugar-activitiy-build/releases" class="card-footer-item" target="_blank">
+                  <i class="fa fa-download ss-i"></i><span class="ss-card-footer-text">Download</span>
+                </a>
+              </footer>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="columns is-desktop" style="margin: 1em 0;">
+          <!-- card 4 / carbonic -->
+          <div class="column ss-project-column">
+            <div class="card ss-card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <img class="ss-card-image" src="/img/carbonic-feature.png" alt="Carbonic feature Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="/img/carbonic-logo.png" alt="Carbonic logo">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">carbonic</p>
+                    <p class="subtitle is-6">Fundamental Organic Processor</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  A simple carbon compound processor to create visual carbon structures
+                  from IUPAC name of the compound.
+                  <br>
+                  <a href="#">#chemistry</a> <a href="#">#organic</a>
+                  <br>
+                  <time datetime="2018-6-28">28 June 2018</time>
+                </div>
+              </div>
+
+
+              <footer class="card-footer ss-card-footer">
+                <a href="https://github.com/srevinsaju/carbonic" class="card-footer-item" target="_blank">
+                  <i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">GitHub</span>
+                </a>
+                <a href="/carbonic/" class="card-footer-item" target="_blank">
+                  <i class="fa fa-wifi ss-i"></i><span class="ss-card-footer-text">Website</span>
+                </a>
+              </footer>
+            </div>
+          </div>
+
+          <!-- card 5 / NewMUN -->
+          <div class="column ss-project-column">
+            <div class="card ss-card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <img class="ss-card-image" src="/img/newmun-feature.png" alt="NewMUN feature Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="/img/newmun-logo.png" alt="NewMUN logo">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">NewMUN</p>
+                    <p class="subtitle is-6">NIS Model United Nations</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  Successfully built a frontend (open source) and backend for the New Indian
+                  School Model United Nations 2018-2020.
+                  <br>
+                  <a href="#">#mun</a> <a href="#">#education</a>
+                  <br>
+                  <time datetime="2018-12-1">15 December 2018</time>
+                </div>
+              </div>
+
+              <footer class="card-footer ss-card-footer">
+                <a href="https://github.com/newmun/newmun.github.io" class="card-footer-item"  target="_blank">
+                  <i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">GitHub</span>
+                </a>
+                <a href="https://newmun.github.io" class="card-footer-item"  target="_blank">
+                  <i class="fa fa-wifi ss-i"></i><span class="ss-card-footer-text">Website</span>
+                </a>
+
+              </footer>
+            </div>
+          </div>
+
+          <!-- card 3 / sugarstore -->
+          <div class="column ss-project-column">
+            <div class="card ss-card">
+              <div class="card-image">
+                <figure class="image is-1by1">
+                  <img class="ss-card-image" src="/img/flux-feature.png" alt="Flux theme feature image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="/img/flux-logo.png" alt="Flux theme logo">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">flux</p>
+                    <p class="subtitle is-6">GTK / KDE Theme</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  A customized ergonomic GTK / KDE theme for the popular Linux Desktop Environments, GNOME and KDE Plasma. 
+                  <br>
+                  <a href="#">#kdeplasma</a> <a href="#">#theme</a>
+                  <br>
+                  <time datetime="2020-03-10">10 March 2020</time>
+                </div>
+              </div>
+
+              <footer class="card-footer ss-card-footer">
+                <a href="https://github.com/srevinsaju/flux" class="card-footer-item" target="_blank">
+                  <i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">GitHub</span>
+                </a>
+                <a href="https://github.com/srevinsaju/flux/releases" class="card-footer-item" target="_blank">
+                  <i class="fa fa-download ss-i"></i><span class="ss-card-footer-text">Download</span>
                 </a>
               </footer>
             </div>
@@ -265,17 +388,106 @@
       </div>
     </section>
 
+    <!-- contact SECTION -->
+    <section id="contact" class="section" style="height: 100vh">
+      <!-- Discord id -->
+      <div class="modal">
+        <div class="modal-background" onclick="$('.modal').removeClass('is-active')"></div>
+        <div class="modal-content" style="background-color: var(--background-color-2); padding: 2em;">
+          Discord id: <strong>srevinsaju#8324</strong>
+        </div>
+        <button class="modal-close is-large" aria-label="close" onclick="$('.modal').removeClass('is-active')"></button>
+      </div>
+
+      <div class="container" style="margin-top: 10vh">
+        <h2 class="ss-about-h1 has-text-centered has-text-left-desktop">Contact me 🤙</h2>
+        <p class="ss-about-content has-text-centered has-text-left-desktop">
+          I'm mostly available on <a class="ss-fun-link" href="https://en.wikipedia.org/wiki/Internet_Relay_Chat" target="_blank">IRC</a>,
+          E-mail, and on a few links below!
+          
+        
+
+        <div class="container ss-contact-cards" style="margin-top: 0.5em;">
+          <!-- Contact icons -->
+          
+            <div class="container">
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://linkedin.com/in/srevinsaju"><i class="fab fa-linkedin-in ss-i"></i><span class="ss-card-footer-text">Linkedin</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://github.com/srevinsaju"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">GitHub</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://twitter.com/srevinsaju"><i class="fa fa-twitter ss-i"></i><span class="ss-card-footer-text">Twitter</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="mailto://srevinsaju@sugarlabs.org"><i class="fa fa-envelope ss-i"></i><span class="ss-card-footer-text">E-mail</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://www.quora.com/profile/Srevin-Saju"><i class="fa fa-quora ss-i"></i><span class="ss-card-footer-text">Quora</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://www.reddit.com/user/srevinsaju/"><i class="fa fa-reddit-alien ss-i"></i><span class="ss-card-footer-text">Reddit</span></a>
+
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://mstdn.io/@srevinsaju"><i class="fab fa-mastodon ss-i"></i><span class="ss-card-footer-text">Mastodon</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://instagram.com/srevinsaju"><i class="fab fa-instagram ss-i"></i><span class="ss-card-footer-text">Instagram</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://t.me/srevinsaju"><i class="fab fa-telegram-plane ss-i"></i><span class="ss-card-footer-text">Telegram</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://webchat.freenode.net/"><i class="fa fa-hashtag ss-i"></i><span class="ss-card-footer-text">IRC #srevinsaju</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" target="_blank" href="https://patreon.com/srevinsaju"><i class="fab fa-patreon ss-i"></i><span class="ss-card-footer-text">Patreon</span></a>
+              <a class="ss-contacts ss-contacts-padding-block" onclick="$('.modal').addClass('is-active')"><i class="fab fa-discord ss-i"></i><span class="ss-card-footer-text">Discord</span></a>
+            </div>
+          
+        </div>
+
+      </div>
+    </section>
+
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script>
+      function darkTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
+        $(":root").get(0).style.setProperty("--background-color", " #121212");
+        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
+        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+        $('#themeSwitch').prop('checked', true);
+      }
+
+      function lightTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#000");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
+        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
+        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
+        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+        $('#themeSwitch').prop('checked', false);
+      }
+
       $(document).ready(function(){
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if ( userPrefersDark ) {
+            darkTheme();
+        }
+
         $(window).scroll(function(){
           $("#main").css("opacity", 1 - ($(window).scrollTop() / $('#main').height())*2);
+        });
+
+        $('#themeSwitch').change(function() {
+          if (this.checked) {
+            darkTheme();
+          } else {
+            lightTheme();
+          };
         });
 
       });
     </script>
 
   </body>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy; <strong>Srevin Saju</strong> 2020.
+        <br>
+        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.</a>
+        <br>
+        <em>You are allowed to take <strong>inspiration</strong> from this website, not the <strong>source code.</strong></em>
+        <br>Read <a href="LICENSE">LICENSE</a> for more information. 
+      </p>
+      <img src="img/by-nc-nd.svg" alt="CC-BY-NC-ND"> 
+
+    </div>
+  </footer>
 
 </html>
