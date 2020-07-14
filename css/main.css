@@ -37,14 +37,35 @@ h2 {
 
 code {
   background-color: var(--background-color);
+  transition: background-color 0.2s;
 }
 
 strong {
-  color: var(--foreground-color)
+  color: var(--foreground-color);
 }
 
 .ss-i {
   margin-right: 0.5rem;
+}
+
+.title {
+  color: var(--foreground-color);
+}
+
+.subtitle {
+  color: var(--foreground-color-2);
+}
+
+/* 
+=============================
+ brand section 
+=============================
+*/
+
+.ss-brand-img {
+  padding: 1em;
+  filter: grayscale(100%) saturate(200%);
+  height: 6em;
 }
 
 
@@ -161,6 +182,7 @@ strong {
   border-radius: 1em;
   background-color: var(--background-color-2);
   color: var(--foreground-color);
+  transition: background-color 0.2s;
 }
 
 .ss-card-footer {
@@ -223,7 +245,6 @@ strong {
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 4px 4px;
-    background-blend-mode: soft-light;
   color: var(--foreground-color);
   text-decoration: none;
   transition: background-size .2s;
@@ -231,6 +252,24 @@ strong {
 
 .ss-fun-link:hover {
   background-size: 4px 50px;
+}
+
+
+.ss-fun-link-small {
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+  background:
+    linear-gradient(to bottom, var(--accent) 0%, var(--accent) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+  color: var(--foreground-color);
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+.ss-fun-link-small:hover {
+  background-size: 2px 50px;
 }
 
 
@@ -246,6 +285,22 @@ strong {
 }
 
 
+
+.ss-skill-img {
+  background: linear-gradient(270deg, var(--accent-secondary), var(--accent-dark));
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 2em;
+  min-width: 1.5em;
+  padding-left: 0.3em;
+}
+
+.mb-medium {
+  margin-bottom: 1.5rem
+}
+
+
+
 /* 
 =============================
  Contacts section 
@@ -259,7 +314,7 @@ strong {
   border-radius: 1em;
   padding: 0.5em;
   margin-right: 0.1em;
-  color: var(--foreground-color) !important;
+  color: var(--foreground-color);
   transition: background-color 0.2s;
 }
 
@@ -323,6 +378,13 @@ strong {
   .ss-contact-cards {
     text-align: center;
   }
+
+  .ss-brand-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 
 }
 
