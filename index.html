@@ -99,13 +99,19 @@
     <!-- ABOUT SECTION -->
     <section id="about" class="section" style="height: 100vh">
       <div class="container ss-aboutbox">
+        <div id="ss-aee" class="notification is-primary" style="display: none; transition: opacity 5s;">
+          <button class="delete" onclick="$('#ss-aee').css('opacity', 0)"></button>
+        </div>
+
+        
         <h1 class="ss-about-hey">Hey 👋</h1>
-        <h2 class="ss-about-h1">I'm <a class="ss-name" style="overflow-wrap: normal;" href="#" onclick="return false;">Srevin Saju</a></h2>
+
+        <h2 class="ss-about-h1">I'm <a class="ss-name" style="overflow-wrap: normal;" href="#" onclick="developerMode(); return false;">Srevin Saju</a></h2>
         <p class="ss-about-content">
           I am an <a class="ss-fun-link" href="https://github.com/srevinsaju" target="_blank" rel="noreferrer">Open Source Developer</a>,
           Graphic Designer and Web developer, working primarily on <a class="ss-fun-link" href="https://python.org" target="_blank" rel="noreferrer">Python</a>, creating 
           <a class="ss-fun-link" href="#projects">interesting software</a> to learn something new everyday! <br>
-          I help create <a class="ss-fun-link" href="https://opensource.com/article/18/1/how-install-apps-linux" target="_blank" rel="noreferrer">easy-to-install</a> binary distibutions of trending open source software for the Linux Operating System.
+          I help create <a class="ss-fun-link" href="https://opensource.com/article/18/1/how-install-apps-linux" target="_blank" rel="noreferrer">easy-to-install</a> binary distributions of trending open source software for the Linux Operating System.
 
 
        </p>
@@ -660,6 +666,7 @@
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/index.js" defer></script>
     <script>
       function darkTheme() {
         $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
