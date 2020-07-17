@@ -613,7 +613,7 @@
         <div class="container has-text-centered">
           <a href="https://sugarlabs.org" target="_blank" rel="noreferrer"><img class="ss-brand-img" src="/img/sugarlabs.png" alt="Sugar Labs"></a> 
           <a href="https://www.genymobile.com/" target="_blank" rel="noreferrer"><img class="ss-brand-img" src="/img/genymobile.png" alt="Genymobile"></a>
-          <a href="https://codein.withgoogle.com/archive/2019/" target="_blank" rel="noreferrer"><img class="ss-brand-img" src="/img/gci.png" alt="Google Code-In"></a>
+          <a href="https://codein.withgoogle.com/archive/2019/" onclick="scrollFunction();" target="_blank" rel="noreferrer"><img class="ss-brand-img" src="/img/gci.png" alt="Google Code-In"></a>
         </div>
       </div>
     </section>
@@ -668,6 +668,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="/js/index.js" defer></script>
     <script>
+      
       function darkTheme() {
         $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
         $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
@@ -676,6 +677,7 @@
         $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
         $('#themeSwitch').prop('checked', true);
         $("#bulma").attr("src","/img/made-with-bulma--white.png");
+        $(":root").get(0).style.setProperty("--cth", "0");
       }
 
       function lightTheme() {
@@ -686,6 +688,7 @@
         $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
         $('#themeSwitch').prop('checked', false);
         $("#bulma").attr("src","/img/made-with-bulma--black.png");
+        $(":root").get(0).style.setProperty("--cth", "255");
       }
 
       $(document).ready(function(){

@@ -76,4 +76,10 @@ function developerMode() {
 }
 
 
+function scrollFunction() {
+    const fx = 'aHR0cHM6Ly9taXJvLm1lZGl1bS5jb20vbWF4LzIxNjAvMCpSWTNzYk9YMWRQNWpaRGot';
+    $('#main').css('background-image', `linear-gradient(to bottom, rgba(var(--cth), var(--cth), var(--cth), 1), rgba(var(--cth), var(--cth), var(--cth), 0)), url(${window.atob(fx)})`);
+
+}
+
 
