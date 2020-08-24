@@ -356,7 +356,7 @@ strong {
   }
 
   .ss-about-content {
-    font-size: 0.5em;
+    font-size: 1em;
   }
 
   .ss-about-hey {
@@ -384,6 +384,9 @@ strong {
 
   .ss-md-center {
     text-align: center;
+  }
+  .ss-about-content {
+  font-size: 1em;
   }
 
   .ss-contact-cards {
