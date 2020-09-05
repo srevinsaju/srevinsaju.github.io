@@ -385,6 +385,9 @@ strong {
   .ss-md-center {
     text-align: center;
   }
+  .ss-about-content {
+  font-size: 1em;
+  }
 
   .ss-contact-cards {
     text-align: center;
