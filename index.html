@@ -27,6 +27,7 @@
     
     
     
+    
   </head>
   <body>
     <!-- Navbar -->
@@ -87,6 +88,7 @@
 
     <!-- HOME SECTION -->
     <section id="main" class="section" style="height: 100vh">
+      <canvas id="c" style="position: fixed; width: 100%; height: 100%;"></canvas>
       <div class="container ss-mainbox">
         <div class="square-box">
           <div class="ss-padding">
@@ -743,6 +745,7 @@
     <section id="with">
       <div class="container" style="margin-top: 2em;">
         <div class="container has-text-centered">
+          <a href="https://kde.org" target="_blank" rel="noreferrer"><img class="ss-brand-img" src="./img/kde_logo.png" alt="KDE logo"></a>
           <a href="https://sugarlabs.org" target="_blank" rel="noreferrer"><img class="ss-brand-img" src="./img/sugarlabs.png" alt="Sugar Labs"></a> 
           <a href="https://www.genymobile.com/" target="_blank" rel="noreferrer"><img class="ss-brand-img" src="./img/genymobile.png" alt="Genymobile"></a>
           <a href="https://codein.withgoogle.com/archive/2019/" onclick="scrollFunction();" target="_blank" rel="noreferrer"><img class="ss-brand-img" src="./img/gci.png" alt="Google Code-In"></a>
@@ -795,8 +798,14 @@
     </script>
     <script src="/js/dist/jquery-3.5.1.slim.min.js"></script>
     <script src="/js/index.js" defer></script>
+    
+    <script src="/js/anime.min.js" defer></script>
+    <script src="" defer></script>
+    
     <script>
-      
+      let starCrack = false;
+      let starScriptLoaded = false;
+      let dark = false;
       function darkTheme() {
         $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
         $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
@@ -806,6 +815,7 @@
         $('#themeSwitch').prop('checked', true);
         $("#bulma").attr("src","./img/made-with-bulma--white.png");
         $(":root").get(0).style.setProperty("--cth", "0");
+        dark = true;
       }
 
       function lightTheme() {
@@ -817,6 +827,17 @@
         $('#themeSwitch').prop('checked', false);
         $("#bulma").attr("src","./img/made-with-bulma--black.png");
         $(":root").get(0).style.setProperty("--cth", "255");
+        dark = false;
+
+        if (starCrack) {
+          context.clearRect( 0, 0, width, height );
+          window.onresize = null;
+          canvas.onmousemove = null;
+
+          canvas.ontouchend = null;
+          document.onmouseleave = null;
+          starCrack = false
+        }
       }
 
       $(document).ready(function(){
@@ -840,6 +861,32 @@
             lightTheme();
           };
         });
+
+
+        $('.navbar-brand').click(function(){
+          console.log(starCrack)
+          console.log("=>", !dark)
+          if (starCrack || !dark ) {
+            return
+          }
+          if (!starScriptLoaded) {
+            var script = document.createElement('script');
+            script.onload = function () {
+              window.onresize = resize;
+              canvas.onmousemove = onMouseMove;
+
+              canvas.ontouchend = onMouseLeave;
+              document.onmouseleave = onMouseLeave;
+            };
+            script.src = '/js/star.js';
+
+            document.head.appendChild(script)
+            starScriptLoaded = true;
+          }
+          
+          starCrack = true  
+        });
+        
 
       });
     </script>
